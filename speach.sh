@@ -1,5 +1,5 @@
 #!/bin/sh
 say() { 
-espeak "$*" -w tmp.wav & mplayer tmp.wav
+espeak "$*" -w tmp.wav & mplayer -ao pulse tmp.wav > /dev/null
 }
 say $*
