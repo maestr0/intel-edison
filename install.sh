@@ -8,3 +8,5 @@ opkg update
 
 opkg install git
 opkg install vim
+
+git config --global push.default simple
