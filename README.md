@@ -51,12 +51,13 @@ On Edison's command line
 
 Note: If you get the error Unknown package 'git', add this repo to the feeds (vi /etc/opkg/base-feeds.conf)
 
-src all     http://iotdk.intel.com/repos/1.1/iotdk/all
-src x86 http://iotdk.intel.com/repos/1.1/iotdk/x86
-src i586    http://iotdk.intel.com/repos/1.1/iotdk/i586
+    src all     http://iotdk.intel.com/repos/1.1/iotdk/all
+    src x86 http://iotdk.intel.com/repos/1.1/iotdk/x86
+    src i586    http://iotdk.intel.com/repos/1.1/iotdk/i586
+    
 then run
+    
+    `opkg update`
+    `opkg install git`
 
-opkg update
-opkg install git
-
-ssh-keygen -t rsa -b 4096 -C "raszewski@gmail.com"
+    `ssh-keygen -t rsa -b 4096 -C "raszewski@gmail.com"`
