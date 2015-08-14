@@ -58,3 +58,5 @@ then run
 
 opkg update
 opkg install git
+
+ssh-keygen -t rsa -b 4096 -C "raszewski@gmail.com"
