@@ -58,3 +58,10 @@ then run
 
 `ssh-keygen -t rsa -b 4096 -C "raszewski@gmail.com"`
 
+
+# Espeak
+
+
+    src/gz all    http://repo.opkg.net/edison/repo/all
+    src/gz edison    http://repo.opkg.net/edison/repo/all
+    src/gz core2-32   http://repo.opkg.net/edison/repo/all
