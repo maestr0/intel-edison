@@ -39,3 +39,22 @@ from mac, run `sudo ./flashall.sh` in the image dir
     Rebooting
     U-boot & Kernel System Flash Success...
     Your board needs to reboot to complete the flashing procedure, please do not unplug it for 2 minutes.
+    
+    
+
+#  install GIT
+    
+    Simply run:
+
+$ opkg install git
+On Edison's command line
+
+Note: If you get the error Unknown package 'git', add this repo to the feeds (vi /etc/opkg/base-feeds.conf)
+
+src all     http://iotdk.intel.com/repos/1.1/iotdk/all
+src x86 http://iotdk.intel.com/repos/1.1/iotdk/x86
+src i586    http://iotdk.intel.com/repos/1.1/iotdk/i586
+then run
+
+opkg update
+opkg install git
