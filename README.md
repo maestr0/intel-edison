@@ -23,7 +23,7 @@ run `run do_flash`
     Writing to MMC(0)... done
     GADGET DRIVER: usb_dnl_dfu
 
-from mac, run `sudo ./flashall.sh` in the image dir
+from mac, run `sudo ./flashall.sh --keep-data` in the image dir
 
     edison-image-ww25.5-15  sudo ./flashall.sh
     Password:
