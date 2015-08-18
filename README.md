@@ -1,6 +1,16 @@
 # intel-edison
  Some shell scripts for Intel Edison to controll a bluetooth speaker and Text To Speach with espeak
 
+# Firmware update
+
+Copy the latest Yocto on the USB drive on edison (must be FAT32 and Primary Partition)
+
+on Edison run
+
+`rebot ota`
+
+wait 3 minutes for the flash process to complete
+
 # Firmware update - alternative method
 
 download image
