@@ -75,3 +75,31 @@ then run
     src/gz all    http://repo.opkg.net/edison/repo/all
     src/gz edison    http://repo.opkg.net/edison/repo/edison
     src/gz core2-32   http://repo.opkg.net/edison/repo/core2-32
+    
+    
+# Bluetooth connect to a speaker at startup
+create a file in 
+
+   /lib/systemd/system/bluetooth-speaker.service
+
+
+   [Unit]
+   Description=Connects to Volcano2 bluetooth speaker
+   
+   [Service]
+   Environment="Timeout=30"
+   ExecStart=/home/root/git/intel-edison/bluetooth_speaker.sh
+   WatchdogSec=30s
+   Restart=on-failure
+   StartLimitInterval=4min
+   StartLimitBurst=4
+   StartLimitAction=reboot-force
+   
+   [Install]
+   WantedBy=basic.target
+   
+   
+run 
+
+   systemctl enable bluetooth-speaker
+ 
