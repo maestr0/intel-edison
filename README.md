@@ -66,6 +66,10 @@ then run
 
 `opkg install git`
 
+`opkg install nano`
+
+`opkg install htop`
+
 `ssh-keygen -t rsa -b 4096 -C "raszewski@gmail.com"`
 
 
