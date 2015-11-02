@@ -59,6 +59,9 @@ add this repo to the feeds (vi /etc/opkg/base-feeds.conf)
     src all     http://iotdk.intel.com/repos/1.1/iotdk/all
     src x86 http://iotdk.intel.com/repos/1.1/iotdk/x86
     src i586    http://iotdk.intel.com/repos/1.1/iotdk/i586
+    src/gz all2    http://repo.opkg.net/edison/repo/all
+    src/gz edison    http://repo.opkg.net/edison/repo/edison
+    src/gz core2-32   http://repo.opkg.net/edison/repo/core2-32
     
 then run
     
@@ -70,17 +73,10 @@ then run
 
 `opkg install htop`
 
+`opkg install espeak`
+
 `ssh-keygen -t rsa -b 4096 -C "raszewski@gmail.com"`
 
-
-# Espeak
-
-
-    src/gz all    http://repo.opkg.net/edison/repo/all
-    src/gz edison    http://repo.opkg.net/edison/repo/edison
-    src/gz core2-32   http://repo.opkg.net/edison/repo/core2-32
-    
-    
 # Connect to a bluetooth speaker at startup
 
 create a file in `/lib/systemd/system/bluetooth-speaker.service`
