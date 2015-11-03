@@ -98,4 +98,16 @@ create a file in `/lib/systemd/system/bluetooth-speaker.service`
     WantedBy=basic.target
 
 run `systemctl enable bluetooth-speaker`
+
+  # set XDA daemon environmental variables
+  
+  `vi /lib/systemd/system/xdk-daemon.service`
+  
+add
+
+```
+     Environment="SLACK_TOKEN=XXXXX"
+     Environment="LOGGY_TOKEN=XXXXX"
+```
+  
  
