@@ -54,7 +54,7 @@ from mac, run `sudo ./flashall.sh --keep-data` in the image dir
 
 #  install GIT
 
-add this repo to the feeds (vi /etc/opkg/base-feeds.conf)
+add these sources to the feeds (vi /etc/opkg/base-feeds.conf)
 
     src all     http://iotdk.intel.com/repos/1.1/iotdk/all
     src x86 http://iotdk.intel.com/repos/1.1/iotdk/x86
