@@ -101,13 +101,6 @@ run `systemctl enable bluetooth-speaker`
 
   # set XDA daemon environmental variables
   
-  `vi /lib/systemd/system/xdk-daemon.service`
-  
-add
-
-```
-     Environment="SLACK_TOKEN=XXXXX"
-     Environment="LOGGY_TOKEN=XXXXX"
-```
-  
+  `systemctl set-environment SLACK_TOKEN=XXXXX`
+  `systemctl set-environment LOGGY_TOKEN=XXXXX`
  
