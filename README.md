@@ -105,3 +105,8 @@ run `systemctl enable bluetooth-speaker`
   
   `systemctl set-environment LOGGY_TOKEN=XXXXX`
  
+add env vars there too
+
+ `vi /lib/systemd/system/xdk-daemon.service`
+
+ `systemctl show xdk-daemon`
